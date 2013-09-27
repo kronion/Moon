@@ -1,0 +1,506 @@
+/* Animations */
+
+@keyframes movebutton1
+{
+0% {top: 0%;}
+7% {top: -7%;}
+15% {top:0%;}
+}
+
+@-moz-keyframes movebutton1 /* Firefox */
+{
+0% {top: 0%;}
+7% {top: -7%;}
+15% {top:0%;}
+}
+
+@-webkit-keyframes movebutton1 /* Safari and Chrome */
+{
+0% {top: 0%;}
+7% {top: -7%;}
+15% {top:0%;}
+}
+
+@-o-keyframes movebutton1 /* Opera */
+{
+0% {top: 0%;}
+7% {top: -7%;}
+15% {top:0%;}
+}
+
+@keyframes movebutton2
+{
+0% {top: 0%;}
+5% {top: 9%;}
+10% {top:0%;}
+}
+
+@-moz-keyframes movebutton2 /* Firefox */
+{
+0% {top: 0%;}
+5% {top: 9%;}
+10% {top:0%;}
+}
+
+@-webkit-keyframes movebutton2 /* Safari and Chrome */
+{
+0% {top: 0%;}
+5% {top: 9%;}
+10% {top:0%;}
+}
+
+@-o-keyframes movebutton2 /* Opera */
+{
+0% {top: 0%;}
+5% {top: 9%;}
+10% {top:0%;}
+}
+
+body {
+   background-image: url('lightpaperfibers.png');
+   overflow: hidden;
+
+   color:WHITE;
+}
+
+.svgwrapper {
+   position: absolute;
+   z-index: -1;
+}
+
+#stars {
+	position:absolute;
+	top:-20%;
+	left:-10px;
+	z-index: -3;
+    background-size: 30%;
+}
+
+#stars2 {
+
+	position:absolute;
+	top:-13%;
+	left:-10px;
+	z-index: -4;
+    background-size: 30%;
+}
+
+#spaceship {
+   position:absolute;
+   width:331px;
+   height:274px;
+   top:25%;
+   left:50%;
+   margin-top:-166px;
+   margin-left:-168px;
+}
+
+#skip {
+	position: relative;
+	width: 300px;
+	height:75px;
+	top:60%;
+	margin: 0 auto;
+	background-color:BLACK;
+	opacity:0;
+	filter:alpha(opacity=0);
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+#skiplink {
+	display: none;
+	z-index: 2;
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	margin: 0 auto;
+}
+
+#skipcenter {
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	margin: 0 auto;
+}
+
+
+#skip h1 {
+	position: relative;
+	bottom: 25px;
+	text-align: center;
+	bottom: 25px;
+	font-family: 'Questrial', sans-serif;
+	font-size:48px;
+	font-weight:400;
+}
+
+#moon {
+   position: absolute;
+   width:1412px;
+   height:1424px;
+   margin-left: -706px;
+   top:17%;
+   left:50%;
+   z-index: -2;
+}
+
+
+#content {
+	position: absolute;
+	width:90%;
+	height:90%;
+	top:5%;
+	left:5%;
+	background-color:BLACK;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	z-index: -1;
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+
+	transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg); /* Safari and Chrome */
+    -moz-transform: rotateX(0deg); /* Firefox */
+}
+
+#text {
+	position: absolute;
+	width:90%;
+	height:90%;
+	top:5%;
+	left:5%;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	z-index: 1;
+}
+
+
+#welcome {
+	position:relative;
+	font-family: 'Questrial', sans-serif;
+	font-size:72px;
+	font-weight:400;
+	left: 40px;
+	top: -40px;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+
+#im_cs {
+	position:relative;
+	font-family: 'Questrial', sans-serif;
+	color:EE7F2D;
+	font-size:56px;
+	font-weight:400;
+	left:100px;
+	top: -85px;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+
+#introduction {
+	position:relative;
+	left:100px;
+	top:-90px;
+}
+
+
+#introduction p {
+	font-family: 'Questrial', sans-serif;
+	font-size:18px;
+	font-weight:400;
+	width:500px;
+	text-indent:20px;
+}
+
+h3 {
+	position:relative;
+	left:75px;
+	bottom:5%;
+	font-family: 'Questrial', sans-serif;
+	font-size:32px;
+	font-weight:400;
+}
+
+#headshot {
+	position: absolute;
+	display:inline-block;
+	height:70%;
+	width:auto;
+	right: 5%;
+	bottom: 20%;
+
+    transition:  opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+}
+
+#bar {
+	visibility: visible;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	width:90%;
+	height:15%;
+	background-color:BLACK;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#github {
+	position:relative;
+	float:left;
+	left:2%;
+	width:16%;
+	height:100%;
+
+   animation: movebutton1 20s ease-in-out 12s infinite;
+   -moz-animation: movebutton1 20s ease-in-out 12s infinite; /* Firefox */
+   -webkit-animation: movebutton1 20s ease-in-out 12s infinite; /* Safari and Chrome */
+   -o-animation: movebutton1 20s ease-in-out 12s infinite; /* Opera */
+}
+
+#github a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('github-test4.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#github a:hover {
+	background-position: 100% center;
+}
+
+#linkedin {
+	left:2%;
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+
+   animation: movebutton2 18s ease-in-out 27s infinite;
+   -moz-animation: movebutton2 18s ease-in-out 27s infinite; /* Firefox */
+   -webkit-animation: movebutton2 18s ease-in-out 27s infinite; /* Safari and Chrome */
+   -o-animation: movebutton2 18s ease-in-out 27s infinite; /* Opera */
+}
+
+#linkedin a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('linkedin-test.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#linkedin a:hover {
+	background-position: 100% center;
+}
+
+#stackover {
+	left:2%;
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+
+   animation: movebutton1 18s ease-in-out 15s infinite;
+   -moz-animation: movebutton1 18s ease-in-out 15s infinite; /* Firefox */
+   -webkit-animation: movebutton1 18s ease-in-out 15s infinite; /* Safari and Chrome */
+   -o-animation: movebutton1 18s ease-in-out 15s infinite; /* Opera */
+}
+
+#stackover a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('stackover-test.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;	
+}
+
+#stackover a:hover {
+	background-position: 100% center;
+}
+
+#blog {
+	left:2%;
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+
+   animation: movebutton2 23s ease-in-out 23s infinite;
+   -moz-animation: movebutton2 23s ease-in-out 23s infinite; /* Firefox */
+   -webkit-animation: movebutton2 23s ease-in-out 23s infinite; /* Safari and Chrome */
+   -o-animation: movebutton2 23s ease-in-out 23s infinite; /* Opera */
+}
+
+#blog a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('blog-test.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;	
+}
+
+#blog a:hover {
+	background-position: 100% center;
+}
+
+#contact {
+	left:2%;	
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+
+   animation: movebutton1 27s ease-in-out 18s infinite;
+   -moz-animation: movebutton1 27s ease-in-out 18s infinite; /* Firefox */
+   -webkit-animation: movebutton1 27s ease-in-out 18s infinite; /* Safari and Chrome */
+   -o-animation: movebutton1 27s ease-in-out 18s infinite; /* Opera */
+}
+
+#contact a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('contact-test.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;	
+}
+
+#contact a:hover {
+	background-position: 100% center;
+}
+
+#projects {
+	left:2%;
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+
+   animation: movebutton2 16s ease-in-out 19s infinite;
+   -moz-animation: movebutton2 16s ease-in-out 19s infinite; /* Firefox */
+   -webkit-animation: movebutton2 16s ease-in-out 19s infinite; /* Safari and Chrome */
+   -o-animation: movebutton2 16s ease-in-out 19s infinite; /* Opera */
+}
+
+#projects a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background:url('projects-test.png');
+	background-size: 200% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#projects a:hover {
+	background-position: 100% center;
+}
+
+#dropdown {
+	position: fixed;
+	width:2%;
+	height:50%;
+	top:-51%;
+	left:49%;
+	background-color:BLACK;
+	z-index: 6;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+
+    transition: top .5s ease-in;
+    -moz-transition: top .5s ease-in;
+    -webkit-transition: top .5s ease-in;
+    -o-transition: top .5s ease-in;
+}
+
+#dropinfo {
+	position: absolute;
+	width:50%;
+	height:50%;
+	top:25%;
+	left:25%;
+	background-color:BLACK;
+	z-index: 7;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+
+	transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg); /* Safari and Chrome */
+    -moz-transform: rotateY(90deg); /* Firefox */
+
+    transition: transform 0.5s linear .5s;
+    -moz-transition: -moz-transform 0.5s linear .5s;
+    -webkit-transition: -webkit-transform 0.5s linear .5s;
+    -o-transition: -o-transform 0.5s linear .5s;
+}
+
+.contactdata {
+	position: relative;
+	font-family: 'Questrial', sans-serif;
+	font-size:32px;
+	font-weight:400;
+	text-align: center;
+	top: 10px;
+
+	opacity: 0;
+
+    transition:  opacity 1s linear 1s;
+    -moz-transition: opacity 1s linear 1s;
+    -webkit-transition: opacity 1s linear 1s;
+    -o-transition: opacity 1s linear 1s;
+}
+
+.comingdata {
+	position: relative;
+	font-family: 'Questrial', sans-serif;
+	font-size:56px;
+	font-weight:400;
+	text-align: center;
+	top:-120px;
+
+	opacity: 0;
+
+    transition:  opacity 1s linear 1s;
+    -moz-transition: opacity 1s linear 1s;
+    -webkit-transition: opacity 1s linear 1s;
+    -o-transition: opacity 1s linear 1s;
+}
+
+#back {
+	display: none;
+	position: fixed;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height:100%;
+	background-color:BLACK;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	z-index: 5;
+}
+
+#backlink {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
